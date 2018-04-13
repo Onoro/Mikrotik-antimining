@@ -19,9 +19,9 @@ You need:
 - Mikrotik router (it could be ROS on your VM)
 
 Steps to reproduce:
-- At first you have to put ad_stop.sh somewhere to your server and to give execution permission. Also you need to put your script to crontab.
+- At first you have to put ad_stop.sh somewhere to your server and to give execution permission.
 - The second step is to create directory, which will be reacheble via http. (Webserver configuration is needed) It could be server in your local network or even your working PC.
-- The third step is to add script to sheduller and to check it's opportunity to work. Just enter to your brovser http://yourserverip/ and you will see antimining_dns.rsc file.
-- The last step is to configure Mikrotik and to add script for downloading and applying antimining_dns.rsc. In addition you have to configure sheduller.
+- The third step is to add script (ad_stop.sh) to scheduler (crontab) and to check it's opportunity to work. Just enter to your browser http://yourserverip/ and you will see antimining_dns.rsc file.
+- The last step is to configure Mikrotik and to add scripts for downloading and applying antimining_dns.rsc. In addition you have to configure scheduler.
 
 
