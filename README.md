@@ -7,9 +7,10 @@ strain your nerves.
 I found couple instructions but they are for local usage, for such software as Ublock, Adblock or system's host file. I decided to 
 implement them for all my networks and created scripts and instructions for Mikrotik implementation.
 
-The main idea is to get lists from other repositories 
+The main idea is to get lists from other repositories: 
 
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+
 https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 
 and convert them to ROS scripts.
