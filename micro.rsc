@@ -2,10 +2,10 @@
 add name=download_antimining policy=read,write,policy,test source="/tool fetch url="http://192.168.1.4/mikrotik/antimining_dns.rsc" mode=http;
 :log info "Downloaded antimining_dns.rsc from 192.168.1.4";"
     
-/ip dns static remove [find where comment="antimining"]
+add name=replace_antimining policy=read,write,policy,test source="/ip dns static remove [find where comment="antimining"]
 /import file-name=antimining_dns.rsc;
 /file remove antimining_dns.rsc;
-:log info "Removed old antimining records and imported new list";
+:log info "Removed old antimining records and imported new list";"
     
 /system schedule
 add comment="Download Antimining list" interval=7d name=Download_Antimining_List on-event=download_antimining policy=read,write,policy,test start-date=\
