@@ -15,8 +15,7 @@ https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 
 and convert them to ROS scripts.
 You need:
-- Linux machine
-- WEB server
+- Linux machine with WEB server
 - Mikrotik router (it could be ROS on your VM)
 
 At first you have to put ad_stop.sh somewhere to your server and to give +x permissions.
